@@ -1,0 +1,67 @@
+
+db.books.find(
+    {
+        "review.rating": 5,
+        "review.review_text": "Good"
+    },
+    {"BookTitle":1,"BookAuthor":1, "_id":0}).pretty()
+
+
+
+The second parameter { "booktitle": 1 } is the projection parameter. 
+This parameter specifies which fields should be included in the result.
+The value 1 indicates that the field booktitle should be included, while all other fields will be excluded.
+
+
+
+
+
+
+Write a query to display the "BookTitle" and "BookAuthor" of the books with 5 ratings and "Good" as  review.
+
+Use pretty() to make output readable.
+
+(  Note: Collection name - books)
+
+The structure of the document is as below:
+
+{
+
+    "_id": 2,
+
+    "BookId": "ISBN:B001012:29832",
+
+    "BookTitle": "Left You Dead",
+
+    "BookAuthor": "Peter James",
+
+    "BookPublisher": "James Patrick",
+
+    "BookCategory": ["Classics","Crime"],
+
+    "BookLanguage": ["English","French"],
+
+    "BookPrice": 2849,
+
+    "BookCopies":8050,
+
+    "PublishDate":  new Date("1940-11-11"),
+
+    "reviews":
+
+    {
+
+      "review_id": "R2",
+
+      "reviewer_name": "Joseph",
+
+      "review_text": "This book is awesome",
+
+      "rating":2,
+
+      "review_date": new Date("2017-12-10")
+
+    }
+
+	}
+
