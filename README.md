@@ -18,3 +18,10 @@ the aggregation pipeline
 
 5)In Aggregation, for combining the objects that are processed, ___________ is used (Project)
 
+Topics:-
+types of aggregation , method , pipline , pipeline flow, pipline operations, other operations 
+Aggregation :--
+              Aggregaation operations helps to process data records and return computed results.
+
+              Aggregation operations group values from multiple documents together, and can perform a varitety of operations on the grouped data to return a single results
+
